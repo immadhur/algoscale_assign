@@ -16,4 +16,4 @@ This is a MERN stack application with functionality to login existing user and s
 
 ## Steps to run 
 
-```npm start
+```npm start```
