@@ -28,7 +28,7 @@ app.post('/signup', async (req, res)=>{
 app.post('/login', async (req, res)=>{
     try {
         console.log(req.body);
-        const user=await userModel.find();
+        const user=await userModel.find({username:req.body.username});
         console.log(user);
         if(user.length>0)
             res.status(200).send({
